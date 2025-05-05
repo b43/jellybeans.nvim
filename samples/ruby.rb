@@ -7,6 +7,8 @@ module MyApp
   class User
     attr_accessor :name, :email
 
+    EMAIL_REGEX = /\A([a-z0-9]+)([._\-+]*([0-9a-z_-]+))*@([a-z0-9]+)([._-]([0-9a-z]+))*(\.[a-z]{2,12})\z/i.freeze
+
     def initialize(name:, email:)
       @name = name
       @email = email

@@ -355,7 +355,7 @@ local theme = lush(function(injected_functions)
 
     -- Types
     -- sym("@type")({}), -- type or class definitions and annotations
-    -- sym("@type.builtin")({}), -- built-in types
+    sym("@type.builtin")({ Type }), -- built-in types
     -- sym("@type.definition")({}), -- identifiers in type definitions (e.g. `typedef <type> <identifier>` in C)
 
     -- sym("@attribute")({}), -- attribute annotations (e.g. Python decorators, Rust lifetimes)
@@ -441,6 +441,10 @@ local theme = lush(function(injected_functions)
     -- sym("@tag.builtin")({}), -- XML-style tag names (e.g. HTML5 tags)
     -- sym("@tag.attribute")({}), -- XML-style tag attributes
     sym("@tag.delimiter")({ fg = blue_cyan_50 }), -- XML-style tag delimiters
+
+    -- golang
+    sym("@module.go")({ Type }), -- XML-style tag names (e.g. in XML, HTML, etc.)
+    sym("@variable.member.go")({ fg = blue_cyan_110 }), -- the key in key/value pairs
 
     -- Telescope
     -- https://github.com/nvim-telescope/telescope.nvim/blob/master/plugin/telescope.lua
