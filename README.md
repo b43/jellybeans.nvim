@@ -2,6 +2,8 @@
 
 Another Lua port of the [Jellybeans colorscheme](https://github.com/nanotech/jellybeans.vim) for Neovim.
 
+Scroll down for [screenshots](#screenshots)
+
 ## Notes
 
 - Rewritten for more accurate color matching
@@ -74,3 +76,8 @@ require('lualine').setup {
 - [jellybeans.nvim](https://github.com/WTFox/jellybeans.nvim) by [WTFox](https://github.com/WTFox)
 - [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) by [Folke](https://github.com/folke)
 - [catppuccin/nvim](https://github.com/catppuccin/nvim) (mocha flavour)
+
+## Screenshots
+
+![Ruby](samples/ruby.jpeg)
+![Golang](samples/golang.jpeg)
