@@ -379,13 +379,13 @@ local theme = lush(function(injected_functions)
     -- sym("@keyword.coroutine")({}), -- keywords related to coroutines (e.g. `go` in Go, `async/await` in Python)
     sym("@keyword.function")({ fg = cyan_30 }), -- keywords that define a function (e.g. `func` in Go, `def` in Python)
     -- sym("@keyword.operator")({}), -- operators that are English words (e.g. `and`, `or`)
-    -- sym("@keyword.import")({}), -- keywords for including modules (e.g. `import`, `from` in Python)
+    sym("@keyword.import")({ fg = cyan_30 }), -- keywords for including modules (e.g. `import`, `from` in Python)
     -- sym("@keyword.type")({}), -- keywords defining composite types (e.g. `struct`, `enum`)
     -- sym("@keyword.modifier")({}), -- keywords defining type modifiers (e.g. `const`, `static`, `public`)
     sym("@keyword.repeat")({ fg = blue_cyan_70 }), -- keywords related to loops (e.g. `for`, `while`)
     sym("@keyword.return")({ fg = cyan_30 }), -- keywords like `return` and `yield`
     -- sym("@keyword.debug")({}), -- keywords related to debugging
-    -- sym("@keyword.exception")({}), -- keywords related to exceptions (e.g. `throw`, `catch`)
+    sym("@keyword.exception")({ fg = blue_cyan_110 }), -- keywords related to exceptions (e.g. `throw`, `catch`)
     sym("@keyword.conditional")({ fg = blue_cyan_70 }), -- keywords related to conditionals (e.g. `if`, `else`)
     -- sym("@keyword.conditional.ternary")({}), -- ternary operator (e.g. `?`, `:`)
     -- sym("@keyword.directive")({}), -- various preprocessor directives and shebangs
