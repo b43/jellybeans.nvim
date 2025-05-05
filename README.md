@@ -1,12 +1,14 @@
-jellybeans.nvim: another Lua port of Jellybeans for Neovim.
+# jellybeans.nvim
+
+Another Lua port of the [Jellybeans colorscheme](https://github.com/nanotech/jellybeans.vim) for Neovim.
 
 ## Notes
 
-- Rewritten for more accurate color matching.
-- Added Tree-sitter support (focused on Go, Ruby, and TypeScript).
-- Added highlighting for used plugins.
+- Rewritten for more accurate color matching
+- Tree-sitter support added (focused on Go, Ruby, and TypeScript)
+- Plugin-specific highlighting for commonly used plugins
 
-## Supported plugins
+## Supported Plugins
 
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [GitSigns](https://github.com/lewis6991/gitsigns.nvim)
@@ -14,6 +16,8 @@ jellybeans.nvim: another Lua port of Jellybeans for Neovim.
 - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
 
 ## Installation
+
+Using [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ```lua
 {
@@ -25,12 +29,12 @@ jellybeans.nvim: another Lua port of Jellybeans for Neovim.
     vim.cmd.colorscheme("jellybeans")
   end,
   dependencies = {
-    "rktjmp/lush.nvim",
+    "rktjmp/lush.nvim", -- required for theme definitions
   },
 },
 ```
 
-## Misc
+## Additional Configuration
 
 ### indent-blankline
 
@@ -65,7 +69,8 @@ require('lualine').setup {
 
 ## Inspirations
 
-- [jellybeans.vim](https://github.com/nanotech/jellybeans.vim) - Thanks, I've been using this theme since 2014.
+- [jellybeans.vim](https://github.com/nanotech/jellybeans.vim) - Thanks, I've been using this theme since 2014
 - [jellybeans-nvim](https://github.com/metalelf0/jellybeans-nvim) by [metalelf0](https://github.com/metalelf0)
-- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) by [Folke](https://githubcom/folke)
 - [jellybeans.nvim](https://github.com/WTFox/jellybeans.nvim) by [WTFox](https://github.com/WTFox)
+- [tokyonight.nvim](https://github.com/folke/tokyonight.nvim) by [Folke](https://github.com/folke)
+- [catppuccin/nvim](https://github.com/catppuccin/nvim) (mocha flavour)
