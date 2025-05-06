@@ -19,6 +19,8 @@ Scroll down for [screenshots](#screenshots)
 
 ## Installation
 
+Please ensure that the termguicolor option in your init.lua file is activated `vim.opt.termguicolors = true`
+
 Using [lazy.nvim](https://github.com/folke/lazy.nvim)
 
 ```lua
