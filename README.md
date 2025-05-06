@@ -52,9 +52,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim)
       "IblEven",
     }
     require("ibl").setup({
-      scope = { enabled = false },
-      indent = { char = "│", highlight = highlight },
-      exclude = { filetypes = { "help" } },
+      indent = { highlight = highlight },
     })
   end,
 },
