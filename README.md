@@ -27,7 +27,6 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim)
 {
   "b43/jellybeans.nvim",
   lazy = false,
-  name = "jellybeans",
   priority = 1000,
   config = function()
     vim.cmd.colorscheme("jellybeans")
