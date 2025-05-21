@@ -485,7 +485,7 @@ local theme = lush(function(injected_functions)
     -- BlinkCmpSource({}),
     BlinkCmpKind({ fg = blue_cyan_100, bg = background }),
     --
-    -- BlinkCmpScrollBarThumb({}),
+    BlinkCmpScrollBarThumb({ bg = blue_cyan_100 }),
     -- BlinkCmpScrollBarGutter({}),
     --
     -- BlinkCmpGhostText({}),
