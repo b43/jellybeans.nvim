@@ -475,33 +475,33 @@ local theme = lush(function(injected_functions)
     IblEven({ fg = gray_11 }),
 
     -- blink.cmp
-    -- https://github.com/Saghen/blink.cmp/blob/main/lua/blink/cmp/highlights.lua
-    -- BlinkCmpLabel({}),
-    BlinkCmpLabelMatch({ fg = red_magenta_30, bg = red_magenta_10 }),
-    --
-    -- BlinkCmpLabelDeprecated({}),
-    -- BlinkCmpLabelDetail({}),
-    -- BlinkCmpLabelDescription({}),
-    -- BlinkCmpSource({}),
-    BlinkCmpKind({ fg = blue_cyan_100, bg = background }),
-    --
-    BlinkCmpScrollBarThumb({ bg = blue_cyan_100 }),
-    -- BlinkCmpScrollBarGutter({}),
-    --
-    -- BlinkCmpGhostText({}),
-    --
-    BlinkCmpMenu({ fg = foreground, bg = background }),
-    BlinkCmpMenuBorder({ fg = blue_cyan_100, bg = background }),
-    BlinkCmpMenuSelection({ fg = blue_cyan_100.lighten(46), bg = blue_cyan_100.darken(74) }),
-    --
-    BlinkCmpDoc({ bg = background }),
-    BlinkCmpDocBorder({ fg = blue_cyan_100, bg = background }),
-    BlinkCmpDocSeparator({ fg = blue_cyan_100, bg = background }),
-    -- BlinkCmpDocCursorLine({}),
-    --
-    -- BlinkCmpSignatureHelp({}),
-    -- BlinkCmpSignatureHelpBorder({}),
-    -- BlinkCmpSignatureHelpActiveParameter({}),
+    -- https://cmp.saghen.dev/configuration/appearance.html
+    BlinkCmpMenu({ fg = foreground, bg = background }), -- Default Pmenu -- The completion menu window
+    BlinkCmpMenuBorder({ fg = blue_cyan_100, bg = background }), -- Default Pmenu -- The completion menu window border
+    BlinkCmpMenuSelection({ fg = blue_cyan_100.lighten(46), bg = blue_cyan_100.darken(74) }), -- Default PmenuSel -- The completion menu window selected item
+
+    BlinkCmpScrollBarThumb({ bg = blue_cyan_100 }), -- Default PmenuThumb -- The scrollbar thumb
+    -- BlinkCmpScrollBarGutter({}), -- Default PmenuSbar -- The scrollbar gutter
+
+    -- BlinkCmpLabel({}), -- Default Pmenu -- Label of the completion item
+    BlinkCmpLabelMatch({ fg = red_magenta_30, bg = red_magenta_10 }), -- Default Pmenu -- (Currently unused) Label of the completion item when it matches the query
+    -- BlinkCmpLabelDeprecated({}), -- Default PmenuExtra -- Deprecated label of the completion item
+    -- BlinkCmpLabelDetail({}), -- Default PmenuExtra -- Label description of the completion item
+    -- BlinkCmpLabelDescription({}), -- Default PmenuExtra -- Label description of the completion item
+    BlinkCmpKind({ fg = blue_cyan_100, bg = background }), -- Default PmenuKind -- Kind icon/text of the completion item
+    BlinkCmpKindCopilot({ fg = blue_30 }), -- BlinkCmpKind<kind> -- Default PmenuKind -- Kind icon/text of the completion item
+    -- BlinkCmpSource({}), -- Default PmenuExtra -- Source of the completion item
+
+    -- BlinkCmpGhostText({}), -- Default NonText -- Preview item with ghost text
+
+    BlinkCmpDoc({ bg = background }), -- Default NormalFloat -- The documentation window
+    BlinkCmpDocBorder({ fg = blue_cyan_100, bg = background }), -- Default NormalFloat, -- The documentation window border
+    BlinkCmpDocSeparator({ fg = blue_cyan_100, bg = background }), -- Default NormalFloat -- The documentation separator between doc and detail
+    -- BlinkCmpDocCursorLine({}), -- Default Visual -- The documentation window cursor line
+
+    -- BlinkCmpSignatureHelp({}), -- Default NormalFloat -- The signature help window
+    BlinkCmpSignatureHelpBorder({ fg = blue_cyan_100, bg = background }), -- Default NormalFloat -- The signature help window border
+    -- BlinkCmpSignatureHelpActiveParameter({}), -- Default LspSignatureActiveParameter -- The active parameter in the signature help window
   }
 end)
 
