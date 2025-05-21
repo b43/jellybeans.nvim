@@ -473,6 +473,35 @@ local theme = lush(function(injected_functions)
     -- indent-blankline
     IblOdd({ fg = gray_14 }),
     IblEven({ fg = gray_11 }),
+
+    -- blink.cmp
+    -- https://github.com/Saghen/blink.cmp/blob/main/lua/blink/cmp/highlights.lua
+    -- BlinkCmpLabel({}),
+    BlinkCmpLabelMatch({ fg = red_magenta_30, bg = red_magenta_10 }),
+    --
+    -- BlinkCmpLabelDeprecated({}),
+    -- BlinkCmpLabelDetail({}),
+    -- BlinkCmpLabelDescription({}),
+    -- BlinkCmpSource({}),
+    BlinkCmpKind({ fg = blue_cyan_100, bg = background }),
+    --
+    -- BlinkCmpScrollBarThumb({}),
+    -- BlinkCmpScrollBarGutter({}),
+    --
+    -- BlinkCmpGhostText({}),
+    --
+    BlinkCmpMenu({ fg = foreground, bg = background }),
+    BlinkCmpMenuBorder({ fg = blue_cyan_100, bg = background }),
+    BlinkCmpMenuSelection({ fg = blue_cyan_100.lighten(46), bg = blue_cyan_100.darken(74) }),
+    --
+    BlinkCmpDoc({ bg = background }),
+    BlinkCmpDocBorder({ fg = blue_cyan_100, bg = background }),
+    BlinkCmpDocSeparator({ fg = blue_cyan_100, bg = background }),
+    -- BlinkCmpDocCursorLine({}),
+    --
+    -- BlinkCmpSignatureHelp({}),
+    -- BlinkCmpSignatureHelpBorder({}),
+    -- BlinkCmpSignatureHelpActiveParameter({}),
   }
 end)
 
