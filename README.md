@@ -14,8 +14,10 @@ Scroll down for [screenshots](#screenshots)
 
 - [Telescope](https://github.com/nvim-telescope/telescope.nvim)
 - [GitSigns](https://github.com/lewis6991/gitsigns.nvim)
-- [NvimTree](https://github.com/nvim-tree/nvim-tree.lua)
+- [Nvim-Tree](https://github.com/nvim-tree/nvim-tree.lua)
 - [indent-blankline](https://github.com/lukas-reineke/indent-blankline.nvim)
+- [blink.cmp](https://github.com/Saghen/blink.cmp)
+- [avante.nvim](https://github.com/yetone/avante.nvim)
 
 ## Installation
 
